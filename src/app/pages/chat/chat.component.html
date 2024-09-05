@@ -1,0 +1,12 @@
+<main>
+  <section class="main-container console">
+    <textarea [value]="cmdVal" (keydown)="preventInput($event)"></textarea>
+
+    <div class = "cmd-control">
+      <button (click)="cmdCreateUser()">создать пользователя</button>
+      <button (click)="cmdPing()">ping</button>
+      <button (click)="cmdGetUsers()">получить пользователей</button>
+      <button (click)="clear()">очистить</button>
+    </div>
+  </section>
+</main>
